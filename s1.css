@@ -1,0 +1,261 @@
+*{
+    margin:0;
+    padding:0;
+}
+:root{
+    --navbar-height:70px;
+}
+#navbar{
+    display:flex;
+    align-items: center;
+}
+#navbar::before{
+    content: "";
+    background-color:black;
+    position: absolute;
+    height: 450%;
+    width:200%;
+    z-index:-1;
+    opacity:0.4;
+}
+
+#image{
+    height: 70px;
+    margin:2px 4px;
+}
+#navbar{
+ position: relative;
+
+}
+
+#navbar ul{
+    display:flex;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+#navbar ul li {
+   /* color: white*/
+    list-style:none;
+    font-style: 1.3rem;
+    align-items: center;
+
+    
+}
+#navbar ul li a{
+    color: white;
+    display:block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+.select{
+    padding: 3px 22px;
+    display: block;
+    color: black;
+    background-color:transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 80px;
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: 1.0rem;
+}
+.select:focus,
+.select:hover{
+    outline: none;
+    border: 0.5px solid white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px ;
+    height:200px;
+    justify-content: left;
+    align-items: left;
+    background: url('s.jpg');
+    position:absolute;
+    height: 80%;
+    width: 100%;
+}
+
+#home h1{
+    color:white;
+    text-align: left;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+#home P{
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border:2px solid white;
+    background-color:transparent;
+    color: white;
+    margin: 17px;
+    font-size:1.3rem;
+    border-radius: 10px;
+    cursor:pointer
+}
+.about{
+    margin:30px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+.about-icon .fas{
+    font-size: 25px;
+    color: orange;
+    margin-right: 20px;
+}
+.about-subtitle{
+    text-transform: capitalize;
+    color: orange;
+    font-size: 25px;
+}
+.about-info{
+    margin-top: 5px;
+    line-height: 1.2;
+}
+.about-icon:hover .fas,
+.about-subtitle:hover{
+    transition: transform 2s ease,color 2s ease ;
+    transform: translateY(-10px);
+    color:#cd6100;
+    cursor: pointer;
+}
+@media screen and (min-width:576px) {
+    .about-center{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+    }
+    .about{
+        flex: 0 0 calc(50% - 16px);
+    }
+}
+@media screen and (min-width:572px) {
+    .about{
+         flex:0 0 calc( 33.3% - 16px);
+    }
+}
+.menu-text{
+    min-height: 80vh;
+    align-items: center;
+    background: orange;
+    columns: black;
+    padding:40px 0;
+}
+.menu text-center{
+    weidth:90%;
+    margin:0 auto:
+}
+.menu-text h1{
+    font-size:40px;
+    text-transform:uppercase;
+    margin-bottom: 10px;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+.menu-text p{
+    margin:20px 0;
+    line-height:2 ;
+}
+.menu-text a{
+       display: inline-block;
+       text-decoration: none;
+       text-transform: uppercase;
+       font-family: 'Baloo Thambi 2', cursive;
+       padding: 13px 20px;
+       border-radius:200px;
+       font-weight:bold;
+       background: rgb(10,10,10);
+       color: orange;
+       cursor: pointer;
+       border:2px solid black;
+}
+.menu-text a:hover{
+    color:orange;
+    background:#fff;
+    border:none;
+}
+@media screen and (min-width:774px){
+    .menu{
+        display: flex;
+    }
+    .menu-text{
+        flex:0 0 30%;
+    }
+    .menu-image{
+        flex: 0 0 70%;
+        clip-path: polygon(0 0,100% 0,50% 100%,0 100%);
+    }
+    .menu{
+        background: orange;
+    }
+}
+#social-icons{
+    height:200px;
+    background: white;
+    text-align:center;
+    padding: 50px 0 50px 0;
+}
+#social-icons a{
+    display:inline-block;
+    padding: 5px 10px;
+    margin:0 5px;
+    font-size: 40px;
+    border-radius: 5px;
+    transition: transform 2s ease, color 2s ease;
+}
+#social-icons a:hover{
+    transform: translateY(-20px);
+}
+
+.array-inputs{
+    width: 500px;
+
+}
+
+#nb
+{
+    background-color: rgb(59, 58, 58);
+    color: black;
+    
+}
+    .array-inputs
+    {
+        display: grid;
+        float:right;
+        grid-template-columns: 40% 40%;
+        place-content: center;
+        padding: 2% 0%;
+        }
+        #a_size
+        {
+            padding: 5% 0%;
+        }
+        #a_speed
+        {
+            padding: 5% 0%;
+        }
+        #a_generate
+        {
+            background-color: oldlace;
+            border: lavenderblush;
+            border-style: ridge;
+            outline: peru;
+            color: white;
+            padding: 4% 0% 0% 0%;
+            text-align: center;
+            color: black;
+        }
+            
